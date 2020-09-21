@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   text-align: center;
@@ -13,8 +17,16 @@ a {
 }
 
 a:hover{
-  color: #eaf6f6; ;
+  color: #eaf6f6; 
+  background-color: #66BFBF;
 }
+
+.nav-links{
+  display: block;
+  padding: 0.5rem;
+}
+
+
 
 h1 {
   font-size: 5.625rem; /*90 px*/
@@ -177,15 +189,18 @@ font-size: 4rem;
   margin: 0;
   padding: 0;
   text-align: center;
-  width: fit-content;
-  position: relative;
-  left: 37%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style-type: none;
 }
 
 .nav li{
   margin:0 1rem 0 1rem;
-  padding: 0.5rem;
-  display: inline-block;
+  flex-flow: column nowrap;
   border: 2px solid #66bfbf;
   border-radius: 10px;
 }
